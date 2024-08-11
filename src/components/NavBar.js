@@ -6,7 +6,8 @@ function NavBar() {
   return (
   <nav>
     {/* display an <a> tag for each link here */}
-    {links.map(link=><a>{link}</a>)}
+    {links.map((link)=>{
+      return <a key={link} href= {`#${link}`} >{link}</a>})}
   </nav>);
 }
 
